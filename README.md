@@ -36,8 +36,27 @@ if the id you are using is the id on the body of the iframe document as recommen
 styleSheeit.check();
 ```
 
+##Recommendations
+* Add an id to the body tag of the document that is generated inside of the iframe and use that as the value to be added to the class name on the limk or style tag that contains the styles to be imported
+* Have the style rules that are defined in that stylesheet be scoped to that body tag by id
+** For example: 
 
-and thats it.
+In your document:
+
+```html
+<body id="three_sheets_to_the_wind">
+  <!-- your awesome widget stuffs go here -->
+</body>
+```
+
+In the parent document:
+
+```html
+<style type="text/css" class="for_three_sheets_to_the_wind">
+  body#three_sheets_to_the_wind { background-color: #000; }
+  body#three_sheets_to_the_wind a { color: #123456; font-size: 24px; };
+</style>
+```
 
 ![sheeit](http://i3.kym-cdn.com/photos/images/newsfeed/000/077/680/davis_sheeeit.jpg)
 
