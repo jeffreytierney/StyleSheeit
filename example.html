@@ -20,7 +20,7 @@
       (function() {
         var iframe = document.getElementById("testorama"),
             doc = iframe.contentDocument || iframe.contentWindow.document;
-        doc.open().write('<!doctype html><ht'+'ml><he'+'ad></he'+'ad><bo'+'dy id="testy_sheeter" onload="appendScriptTag()"><scr'+'ipt type="text/javascript">function appendScriptTag(){var s=document.createElement("script");s.setAttribute("type", "text/javascript");s.setAttribute("src", "StyleSheeit.js?ts='+ (+new Date) +'");document.body.appendChild(s);setTimeout(function() {styleSheeit.check();},1000);}</scr'+'ipt></bo'+'dy></ht'+'ml>');
+        doc.open().write('<!doctype html><ht'+'ml><he'+'ad></he'+'ad><bo'+'dy id="testy_sheeter" onload="appendScriptTag()"><scr'+'ipt type="text/javascript">function appendScriptTag(){var s=document.createElement("script");s.setAttribute("type", "text/javascript");s.setAttribute("src", "StyleSheeit.js?ts='+ (+new Date) +'");document.body.appendChild(s);setTimeout(function() {StyleSheeit.check();},1000);}</scr'+'ipt></bo'+'dy></ht'+'ml>');
         doc.close();
 
       })();

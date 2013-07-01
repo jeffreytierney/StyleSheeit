@@ -17,17 +17,17 @@ This simple little tool will allow you to target specific style sheets in the pa
 ##Usage:
 In the parent document, make sure that the style or link tag that you are looking to import is given a class of "for_[some_id_that_you_create]" (It is recommended that you give the body tag of the document in the iframe an ID, and then use this as the id referenced in the tag)
 
-Then, once you include styleSheit in your document, its as simple as calling:
+Then, once you include StyleSheeit in your document, its as simple as calling:
 
 ```
-styleSheeit.check(id);
+StyleSheeit.check(id);
 ```
 
 
 if the id you are using is the id on the body of the iframe document as recommended, then you can leave out that param
 
 ```
-styleSheeit.check();
+StyleSheeit.check();
 ```
 
 ##Recommendations
@@ -39,7 +39,7 @@ In your document:
 
 ```html
 <body id="three_sheets_to_the_wind">
-  <!-- your awesome widget stuffs go here (and they at some point call styleSheeit.check(); ) -->
+  <!-- your awesome widget stuffs go here (and they at some point call StyleSheeit.check(); ) -->
 </body>
 ```
 

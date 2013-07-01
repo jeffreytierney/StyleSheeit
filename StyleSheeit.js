@@ -75,7 +75,7 @@
     if(window.console && window.console.log) { console.log.apply(console,arguments);}
   }
   
-  scope.styleSheeit = {
+  scope.StyleSheeit = {
     check: checkForStyles
   };
   
