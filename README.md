@@ -14,12 +14,6 @@ And lets say that you want to allow the people who will be including your widget
 This simple little tool will allow you to target specific style sheets in the parent doc (either a style or link tag), and create a new stylesheet in the iframe document that contains all of the same style rules.
 
 
-##Limitations:
-
-This will only work if the iframe document has access to the parent document (i.e. not loaded from the a different origin via the src attribute on the iframe).
-In the case that I specifically developed this for, I followed the pattern outlined by meebo in this great Velocity presentation from 2010 on how to load third party widgets in a non-blocking manner -> http://www.youtube.com/watch?v=b7SUFLFu3HI
-
-
 ##Usage:
 In the parent document, make sure that the style or link tag that you are looking to import is given a class of "for_[some_id_that_you_create]" (It is recommended that you give the body tag of the document in the iframe an ID, and then use this as the id referenced in the tag)
 
@@ -57,6 +51,13 @@ In the parent document:
   body#three_sheets_to_the_wind a { color: #123456; font-size: 24px; };
 </style>
 ```
+
+##Limitations:
+
+This will only work if the iframe document has access to the parent document (i.e. not loaded from the a different origin via the src attribute on the iframe).
+In the case that I specifically developed this for, I followed the pattern outlined by meebo in this great Velocity presentation from 2010 on how to load third party widgets in a non-blocking manner -> http://www.youtube.com/watch?v=b7SUFLFu3HI
+
+
 
 ![sheeit](http://i3.kym-cdn.com/photos/images/newsfeed/000/077/680/davis_sheeeit.jpg)
 
