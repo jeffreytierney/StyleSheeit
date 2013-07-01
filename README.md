@@ -39,7 +39,7 @@ In your document:
 
 ```html
 <body id="three_sheets_to_the_wind">
-  <!-- your awesome widget stuffs go here -->
+  <!-- your awesome widget stuffs go here (and they at some point call styleSheeit.check(); ) -->
 </body>
 ```
 
