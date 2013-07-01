@@ -33,7 +33,8 @@ StyleSheeit.check();
 ##Recommendations
 * Add an id to the body tag of the document that is generated inside of the iframe and use that as the value to be added to the class name on the limk or style tag that contains the styles to be imported
 * Have the style rules that are defined in that stylesheet be scoped to that body tag by id
-** For example: 
+
+For example: 
 
 In your document:
 
